@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex; // container se convierte en flex item
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; // Total alto view port
+    background: #f6f6f6;
+}
+h1{
+    position: absolute;
+    width: 100%;
+    top: 1em;
+    left: 0;
+    text-align: center;
+}
+.container{
+    width: 500px;
+    height: 300px;
+    background: url('../img/sad.jpeg');
+
+    //Centrado del contenedor
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; // Oculta lo sobresaliente
+    box-shadow: 0 0 0 10px #fff,
+                0 0 0 11px #ccc,
+                0 20px 20px -12px #000;
+    &:hover p{
+        top:0;
+    }
+    p{
+        margin: 0;
+        padding: 1em;
+        box-sizing: border-box; //No exede el tamaño
+        width: 100%;
+        height: 100%;
+        text-align: justify;
+        background: rgba(#000, 0.8);
+        color: #fff;
+        //Centrar Contenido
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100%;
+        transition: all .5s;
+
+    }
+}

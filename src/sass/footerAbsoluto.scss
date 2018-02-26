@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: lavender;
+}
+header{
+    align-self: flex-start;
+    padding: 1em;
+    width: 100%;
+    background: seagreen;
+    text-align: center;
+}
+h1,h2{
+    text-align: center;
+}
+h1{
+    color:lavender;
+}
+h2{
+    color: steelblue;
+}
+main{
+    padding: 1em;
+}
+footer{
+    align-self: flex-end;
+    background: #000011;
+    width: 100%;
+    padding: 1em;
+    color:#f0f0f0;
+    text-align: center;
+}
