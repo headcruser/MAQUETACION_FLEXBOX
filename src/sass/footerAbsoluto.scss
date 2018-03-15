@@ -3,14 +3,12 @@ body{
     padding: 0;
     font-family: serif;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     min-height: 100vh;
     background: lavender;
 }
 header{
-    align-self: flex-start;
     padding: 1em;
-    width: 100%;
     background: seagreen;
     text-align: center;
 }
@@ -23,13 +21,32 @@ h1{
 h2{
     color: steelblue;
 }
+.main{
+    display: flex;
+}
 main{
     padding: 1em;
+    height: 400px;
+    background: tomato;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+aside{
+    width: 25%;
+    background: teal;
+    color: seashell;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 footer{
-    align-self: flex-end;
+    margin-top: auto;
     background: #000011;
-    width: 100%;
     padding: 1em;
     color:#f0f0f0;
     text-align: center;
